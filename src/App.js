@@ -1,5 +1,5 @@
  import React from "react";
-import Card from "./components/card";
+import CardList from "./components/cardList";
 
  
 class App extends React.Component{
@@ -8,7 +8,7 @@ render(){
   return (
     <div>
       <div className="header">{this.props.title}</div>
-      <Card></Card>
+      <CardList></CardList>
     </div>
   );
 

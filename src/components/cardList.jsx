@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./card";
 
 const testData = [
     {name: "Dan Abramov", avatar_url: "https://avatars0.githubusercontent.com/u/810438?v=4", company: "@facebook"},
@@ -6,12 +7,12 @@ const testData = [
     {name: "Sebastian Markbåge", avatar_url: "https://avatars2.githubusercontent.com/u/63648?v=4", company: "Facebook"},
 ];
 
-const CardList = (props) => {
+const CardList = () => (
 
         <div>
-            <Card></Card>
+            {testData.map( profile => <Card {...profile}/>)}
         </div>
 
-}
+);
 
 export default CardList;
